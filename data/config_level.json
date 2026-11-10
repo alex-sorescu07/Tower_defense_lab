@@ -1,0 +1,106 @@
+{
+  "map": {
+    "cols": 12,
+    "rows": 8,
+    "cell_size": 64,
+    "base_hp": 10,
+    "start_coins": 250,
+    "waypoints": [
+      [0, 2],
+      [4, 2],
+      [4, 5],
+      [8, 5],
+      [8, 1],
+      [11, 1]
+    ]
+  },
+  "towers": {
+    "rapid": {
+      "name": "Pulse Turret",
+      "behavior": "direct",
+      "cost": 60,
+      "range": 160.0,
+      "damage": 20,
+      "cooldown": 0.6,
+      "aim_delay": 0.0,
+      "upgrade_cost": 60,
+      "upgrade_bonus_damage": 15,
+      "upgrade_bonus_range": 25.0
+    },
+    "sniper": {
+      "name": "Railgun Sniper",
+      "behavior": "sniper",
+      "cost": 100,
+      "range": 320.0,
+      "damage": 110,
+      "cooldown": 2.5,
+      "aim_delay": 0.12,
+      "upgrade_cost": 90,
+      "upgrade_bonus_damage": 90,
+      "upgrade_bonus_range": 60.0
+    }
+  },
+  "enemies": {
+    "scout": {
+      "name": "Scout Drone",
+      "hp": 100,
+      "base_speed": 95.0,
+      "reward": 25
+    },
+    "tank": {
+      "name": "Heavy Mech",
+      "hp": 240,
+      "base_speed": 50.0,
+      "reward": 50
+    }
+  },
+  "waves": [
+    {
+      "wave_number": 1,
+      "spawns": [
+        {"type": "scout", "spawn_time": 0.5},
+        {"type": "scout", "spawn_time": 2.0},
+        {"type": "scout", "spawn_time": 3.5}
+      ]
+    },
+    {
+      "wave_number": 2,
+      "spawns": [
+        {"type": "scout", "spawn_time": 0.5},
+        {"type": "tank", "spawn_time": 2.0},
+        {"type": "scout", "spawn_time": 3.5},
+        {"type": "scout", "spawn_time": 5.0}
+      ]
+    },
+    {
+      "wave_number": 3,
+      "spawns": [
+        {"type": "tank", "spawn_time": 0.5},
+        {"type": "tank", "spawn_time": 2.5},
+        {"type": "scout", "spawn_time": 4.0},
+        {"type": "scout", "spawn_time": 5.0}
+      ]
+    },
+    {
+      "wave_number": 4,
+      "spawns": [
+        {"type": "scout", "spawn_time": 0.5},
+        {"type": "tank", "spawn_time": 1.5},
+        {"type": "tank", "spawn_time": 3.0},
+        {"type": "tank", "spawn_time": 4.5},
+        {"type": "scout", "spawn_time": 5.5}
+      ]
+    },
+    {
+      "wave_number": 5,
+      "spawns": [
+        {"type": "tank", "spawn_time": 0.5},
+        {"type": "tank", "spawn_time": 2.0},
+        {"type": "tank", "spawn_time": 3.5},
+        {"type": "tank", "spawn_time": 5.0},
+        {"type": "scout", "spawn_time": 6.0},
+        {"type": "scout", "spawn_time": 6.8}
+      ]
+    }
+  ]
+}
