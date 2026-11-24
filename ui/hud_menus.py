@@ -3,7 +3,7 @@ import pygame
 from services.game_engine import GameEngine
 
 class HudAndMenus:
-    def _init_(self, screen: pygame.Surface, width: int, height: int, hud_height: int) -> None:
+    def __init__(self, screen: pygame.Surface, width: int, height: int, hud_height: int) -> None:
         self.screen = screen
         self.width = width
         self.height = height
