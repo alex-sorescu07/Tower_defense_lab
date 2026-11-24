@@ -69,7 +69,7 @@ def save_game_result(
     path.parent.mkdir(parents=True, exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
         json.dump(results, f, indent=2)
-Fișier: services/economy.pyPythonfrom models.enemy import Enemy
+from models.enemy import Enemy
 from models.tower import Tower
 
 
