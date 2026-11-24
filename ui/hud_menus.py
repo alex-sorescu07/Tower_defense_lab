@@ -1,3 +1,7 @@
+from typing import Optional, Tuple
+import pygame
+from services.game_engine import GameEngine
+
 class HudAndMenus:
     def _init_(self, screen: pygame.Surface, width: int, height: int, hud_height: int) -> None:
         self.screen = screen
