@@ -1,3 +1,7 @@
+import json
+from pathlib import Path
+from typing import Any, Dict
+
 class ConfigError(Exception):
     """Excepție aruncată când fișierul JSON este corupt sau invalid."""
 
