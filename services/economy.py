@@ -2,7 +2,7 @@ from models.enemy import Enemy
 from models.tower import Tower
 
 class EconomyService:
-    def init(self, start_coins: int) -> None:
+    def __init__(self, start_coins: int) -> None:
         self.coins: int = start_coins
         self.coins_spent: int = 0
         self.kills: int = 0
